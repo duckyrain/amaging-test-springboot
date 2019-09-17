@@ -1,4 +1,4 @@
-package cn.amaging.test.sprintboot.service;
+package cn.amaging.test.springboot.service;
 
 import cn.amaging.test.springboot.api.UserService;
 import org.springframework.stereotype.Service;

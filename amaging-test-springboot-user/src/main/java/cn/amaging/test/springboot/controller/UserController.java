@@ -15,7 +15,6 @@ import java.util.Map;
 @RestController
 public class UserController {
 
-    @Autowired
     private UserService userService;
 
     @RequestMapping(value = "/users", method = RequestMethod.GET)
@@ -23,4 +22,8 @@ public class UserController {
         return userService.users(params);
     }
 
+    @Autowired
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
 }
